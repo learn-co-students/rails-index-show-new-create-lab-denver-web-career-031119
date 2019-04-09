@@ -1,0 +1,9 @@
+<h1>Coupons#new</h1>
+<p>Find me in app/views/coupons/new.html.erb</p>
+
+<%= form_tag coupons_path %>
+  <label for="coupon[coupon_code]">Coupon Form:</label>
+    <%= text_field_tag "coupon[coupon_code]" %>
+  <label for="coupon[store]">Store:</label>
+    <%= text_field_tag "coupon[store]" %>
+  <%= submit_tag 'Submit Coupon' %>
